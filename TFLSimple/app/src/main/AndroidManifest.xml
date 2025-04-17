@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ImpliedTouchscreenHardware,MissingLeanbackSupport">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Leanback"
+        tools:ignore="MissingTvBanner">
+
+        <activity android:name="com.grodok.tflsimple.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
